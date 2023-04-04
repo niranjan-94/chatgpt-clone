@@ -1,7 +1,11 @@
-const ChatPage = () => {
+import ChatPage from "@/components/ChatPage"
+
+const page = () => {
   return (
-    <div>ChatPage</div>
+    <div>
+      <ChatPage/>
+    </div>
   )
 }
 
-export default ChatPage 
+export default page 
