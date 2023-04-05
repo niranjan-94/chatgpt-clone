@@ -1,11 +1,19 @@
-import ChatPage from "@/components/ChatPage"
+import Chat from "@/components/Chat"
+import ChatInput from "@/components/ChatInput"
 
-const page = () => {
+type ChatPageProps = {
+  params: {
+    id: string
+  }
+}
+
+const ChatPage = ({ params: { id } }: ChatPageProps) => {
   return (
-    <div>
-      <ChatPage/>
+    <div className="flex flex-col h-screen overflow-hidden">
+      <Chat chatId={id} />
+      <ChatInput chatId={id} />
     </div>
   )
 }
 
-export default page 
+export default ChatPage

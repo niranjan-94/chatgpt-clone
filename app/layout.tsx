@@ -5,6 +5,7 @@ import './globals.css'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import Login from '@/components/Login'
+import ClinentProvider from '@/components/ClinentProvider'
 
 export const metadata = {
   title: 'ChatGPT Clone',
@@ -32,6 +33,7 @@ export default async function RootLayout({
                 <SideBar />
               </div>
 
+              <ClinentProvider/>
 
               <div className='bg-[#343541] flex-1'>{children}</div>
             </div>
