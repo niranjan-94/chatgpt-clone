@@ -11,7 +11,7 @@ type ChatInputProps = {
 }
 
 //TODO: useSWR
-const model = "sdsfd"
+const model = "text-davinci-003"
 
 const ChatInput = ({ chatId }: ChatInputProps) => {
     const [prompt, setPromt] = useState("");
